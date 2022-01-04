@@ -1,12 +1,17 @@
-# Project Title
+# Loan Analyzer 
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This project is add features to a loan analyzer program which allows a customer to check their eligibility for a loan against a .csv file of imported bank offerings. The program filters the list of loan options automatically. The updated features will allow the user to export the refined list to a .csv file to a path of their choosing.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This program requires python verson 3.9 or greater, and the following libraries should be installed:
+Fire
+Questionary
+Pathlib
+sys
+csv
 
 ---
 
@@ -24,7 +29,7 @@ This section should include screenshots, code blocks, or animations explaining h
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+Neil Mendelow - https://www.linkedin.com/in/neil-mendelow/
 
 ---
 

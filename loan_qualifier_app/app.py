@@ -111,13 +111,21 @@ def save_qualifying_loans(qualifying_loans):
     """
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     
-    csvpath = Path("qualifying_loans.csv")
+    csvpath = questionary.text("Enter a file path to save the list of qualifying loans (.csv)").ask()
     with open(csvpath, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(header)
         for row in qualifying_loans:
             csvwriter.writerow(row)
     return qualifying_loans        
+
+#def output_options(qualifying_loans):
+    """Checks to see if there are any loans that meet the input criteria, if there are, it then asks the user if they want to save the list as a csv file
+    
+    Arge:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+
 
 
 def run():
