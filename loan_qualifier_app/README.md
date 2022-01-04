@@ -6,11 +6,11 @@ This project is add features to a loan analyzer program which allows a customer 
 
 ## Technologies
 
-This program requires python verson 3.9 or greater, and the following libraries should be installed:
-Fire
-Questionary
-Pathlib
-sys
+This program should be run with python verson 3.9 or greater, and the following libraries should be installed:
+Fire,
+Questionary,
+Pathlib,
+sys,
 csv
 
 ---

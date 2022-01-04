@@ -119,13 +119,20 @@ def save_qualifying_loans(qualifying_loans):
             csvwriter.writerow(row)
     return qualifying_loans        
 
-#def output_options(qualifying_loans):
-    """Checks to see if there are any loans that meet the input criteria, if there are, it then asks the user if they want to save the list as a csv file
+def output_options(qualifying_loans):
+    """Asks the user if they want to save the list as a csv file
     
     Arge:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
+    csv_save = questionary.text("Do you want to save the list of loans as a .csv file? (yes/no)").ask()
+    if csv_save == "yes":
+        save_qualifying_loans(qualifying_loans)
+    else:     
+        sys.exit(f"Thank you for reviewing your loan options with us.")
+    return csv_save
 
+#def loans_were_found(bank_data_filtered)
 
 
 def run():
@@ -142,10 +149,13 @@ def run():
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
 
-    print(qualifying_loans)
+    print(f"These are the loans that met your criteria: {qualifying_loans}")
+
+    #Ask the customer if they want to save their loans as a .csv file
+    output_options(qualifying_loans)
 
     # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
+    #save_qualifying_loans(qualifying_loans)
 
 
 if __name__ == "__main__":
