@@ -1,0 +1,50 @@
+   44  cd loan_qualifier_app
+   45  conda activate dev
+   46  ls
+   47  code .
+   48  python app.py
+   49  git ask -A
+   50  git add -A
+   51  git commit - m "The save_qualifying_loans function has been updated to allow the user to specify the file path when saving the loan information as a .csv file. The Readme has also been updated to reflect a more decriptive project title, description of the project, and list the software contributers."
+   52  git commit -m "The save_qualifying_loans function has been updated to allow the user to specify the file path when saving the loan information as a .csv file. The Readme has alsobeen updated to reflect a more descriptive project title, description of the project, and list the software contributers."
+   53  git pull origin main
+   54  git push origin main
+   55  python app.py
+   56  python app.py
+   57  python app.py
+   58  python app.py
+   59  python app.py
+   60  git add -A
+   61  git commit -m "This updated version adds the 'output_options' function which gives the user the choice to save their filtered list to a .csv file. The .csv file is only created if an answer of 'yes' is given when the option appears. Any other input will cause the program to exit with a default thank you message."
+   62  git pull origin main
+   63  git push origin main
+   64  python app.py
+   65  python app.py
+   66  python app.py
+   67  git add -A
+   68  git commit -m "Added the function 'loans_were_found' which checks to see if there are any loans that meet the filtered criteria. If no loans are found, the program automatically terminates after informing the user."
+   69  git pull origin main
+   70  git push origin main
+   71  python app.py
+   72  app.py
+   73  python app.py
+   74  git add -A
+   75  git commit -m "Updated the 'save_qualifying_loans' function to utilize the questionary confirm.ask"
+   76  git pull origin main
+   77  git push origin main
+   78  python app.py
+   79  git add -A
+   80  git commit -m "updated readme file to include usage and license info."
+   81  git pull origin main
+   82  git push origin main
+   83  git add -A
+   84  git commit -m "updating readme to try to get screen captures to display."
+   85  git origin pull main
+   86  git pull origin main
+   87  pit push origin main
+   88  git push origin main
+   89  git add -A
+   90  git commit -m "updating readme file to get screenshots to display correctly."
+   91  git pull origin main
+   92  git push origin main
+   93  history 50 > terminal_history.txt

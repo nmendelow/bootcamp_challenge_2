@@ -133,6 +133,13 @@ def output_options(qualifying_loans):
     return csv_save
 
 def loans_were_found(bank_data_filtered):
+    """
+    This function checks to see if any of the loans work with the filtered criteria. If there are loans foung in the bank_data_filtered list,
+    The function returns that list. If not, the program exits automatically, and displays a message to the user
+    
+    Args: bank_data_filtered (list of lists): the filtered bank list
+
+    """
     if len(bank_data_filtered) <= 0:
         sys.exit(f"We're sorry. There are no loans available that meet your requirements.")
 
@@ -160,8 +167,7 @@ def run():
     #Ask the customer if they want to save their loans as a .csv file
     output_options(qualifying_loans)
 
-    # Save qualifying loans
-    #save_qualifying_loans(qualifying_loans)
+    
 
 
 if __name__ == "__main__":
