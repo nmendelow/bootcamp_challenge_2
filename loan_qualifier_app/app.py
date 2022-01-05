@@ -132,7 +132,11 @@ def output_options(qualifying_loans):
         sys.exit(f"Thank you for reviewing your loan options with us.")
     return csv_save
 
-#def loans_were_found(bank_data_filtered)
+def loans_were_found(bank_data_filtered):
+    if len(bank_data_filtered) <= 0:
+        sys.exit(f"We're sorry. There are no loans available that meet your requirements.")
+
+    return bank_data_filtered    
 
 
 def run():
@@ -148,6 +152,8 @@ def run():
     qualifying_loans = find_qualifying_loans(
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
+    #check to see if any loans met the criteria
+    loans_were_found(qualifying_loans)
 
     print(f"These are the loans that met your criteria: {qualifying_loans}")
 
