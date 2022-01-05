@@ -125,8 +125,8 @@ def output_options(qualifying_loans):
     Arge:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    csv_save = questionary.text("Do you want to save the list of loans as a .csv file? (yes/no)").ask()
-    if csv_save == "yes":
+    csv_save = questionary.confirm("Do you want to save the list of loans as a .csv file?").ask()
+    if csv_save == True:
         save_qualifying_loans(qualifying_loans)
     else:     
         sys.exit(f"Thank you for reviewing your loan options with us.")
