@@ -17,13 +17,27 @@ csv
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+n/a
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+To begin, when running the program, you will be prompted for a path to load in the bank data.
+(/screencaps/step_1.png?raw=true "Enter the file path here.")
+
+Once the file has been sucessfully uploaded, the user will be prompted to enter in relavant data pertaining to their loan application
+(/screencaps/step_2.png?raw=true "Answer the questions asked.")
+
+The program will calculate a few financial ratios, and then display the details of the mortgage products which are available to the user given the information provided
+(/screencaps/step_3.png?raw=true "Here are the loans the analyzer found.)
+
+If no loans are found that the user qualifies for, the system will notify the user and terminate the program
+(/screencaps/step_4.png?raw=true "Better luck next time.")
+
+If there are loans found, the program will give the user the option to save the loans as a .csv file
+(/screencaps/step_5_yes.png?raw=true "'Yes' option")
+(/screencaps/step_5_no.png?raw=true "'No' option")
 
 ---
 
@@ -35,4 +49,4 @@ Neil Mendelow - https://www.linkedin.com/in/neil-mendelow/
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+This code is covered by the MIT license.
